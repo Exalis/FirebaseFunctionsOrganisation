@@ -5,4 +5,4 @@ const admin = require('firebase-admin')
 const config = functions.config().firebase
 
 admin.initializeApp(config)
-loadFunctions(__dirname, exports)
+loadFunctions(__dirname, exports, true)
